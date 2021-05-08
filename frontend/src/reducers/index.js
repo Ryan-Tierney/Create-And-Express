@@ -1,12 +1,11 @@
-import { currentUserReducer } from './currentUser'
-import { creationsReducer } from './creations'
+import { currentUserReducer } from "./currentUser";
+import { creationsReducer } from "./creations";
 
-import { combineReducers } from 'redux' 
+import { combineReducers } from "redux";
 
 const rootReducer = combineReducers({
-    currentUser: currentUserReducer,
-    creations: creationsReducer
+  currentUser: currentUserReducer,
+  creations: creationsReducer
+});
 
-})
-
-export default rootReducer
+export default rootReducer;

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_04_13_213539) do
+ActiveRecord::Schema.define(version: 2021_05_06_132133) do
 
   create_table "categories", force: :cascade do |t|
     t.string "name"
@@ -39,6 +39,7 @@ ActiveRecord::Schema.define(version: 2021_04_13_213539) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.boolean "public"
+    t.integer "likes"
     t.index ["category_id"], name: "index_creations_on_category_id"
     t.index ["location_id"], name: "index_creations_on_location_id"
     t.index ["user_id"], name: "index_creations_on_user_id"

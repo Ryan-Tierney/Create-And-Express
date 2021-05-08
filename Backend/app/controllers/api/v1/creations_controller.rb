@@ -54,7 +54,8 @@ class Api::V1::CreationsController < ApplicationController
       :name,
       :date,
       :notes,
-      :public
+      :public,
+      :likes
     )
   end
 end
